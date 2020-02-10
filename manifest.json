@@ -1,0 +1,29 @@
+{
+    "name": "Moodle Dark -- LSU",
+    "version": "0.0.7",
+    "manifest_version": 2,
+    "description": "Dark theme to bypass the hard-on-the-eyes look of LSU's Moodle",
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": [
+                "*://moodle3.lsu.edu/*",
+                "*://moodle3.lsu.edu/course/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
