@@ -24,6 +24,11 @@ h3, h2, p, .snap-completion-meta a {
 .completion-line { 
     background: mediumpurple !important
 }
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: initial !important;
+    }
+}
 
 /* Course Page Styles  -- p.s. I know it's ugly, but LSU's CSS isn't the cleanest to work with, haha */ 
 header, #mr-nav, #page, li, ul, div:not(.courseinfo):not(.courseinfo-body):not(.dynamicinfo):not(.coursegrade):not(.completionstatus):not(.completion-line):not(.breadcrumb-nav), footer, p, span, table, tr, table.boxaligncenter.generaltable.user-grade *{

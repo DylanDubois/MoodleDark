@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', function () {
         '.completion-line { background: mediumpurple !important}';
 
     const courseStyles = 'header, #mr-nav, #page, li, ul, div:not(.courseinfo):not(.courseinfo-body):not(.dynamicinfo):not(.coursegrade):not(.completionstatus):not(.completion-line):not(.breadcrumb-nav), footer, p, span, table, tr, table.boxaligncenter.generaltable.user-grade *, select { background: #333 !important; color: white !important; } h1, h2, h3, h4, h5, h6, p, a, li, span, i { color: white !important } input[type="submit"],input[type="text"],input[type="number"] { border-color: white !important; background: #e3e3e3 !important; color: black !important; } ' +
-        '#page-header { background: rgb(2,0,36) !important; background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(85,1,117,1) 35%, rgba(42,1,74,1) 100%) !important;} #page-mast, #page-mast > p, .breadcrumb-nav { background: transparent !important; } .courseinfo:hover {    box-shadow: 0 8px 17px 0 mediumpurple, 0 6px 20px 0 rgba(85,1,117,1) !important;}';
+        '#page-header { background: rgb(2,0,36) !important; background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(85,1,117,1) 35%, rgba(42,1,74,1) 100%) !important;} #page-mast, #page-mast > p, .breadcrumb-nav { background: transparent !important; } .courseinfo:hover {    box-shadow: 0 8px 17px 0 mediumpurple, 0 6px 20px 0 rgba(85,1,117,1) !important;} ' +
+        '@media (max-width: 767px) { .hidden-xs { display: initial !important; }}';
 
     addStyleString(courseStyles);
     addStyleString(popupStyles);
